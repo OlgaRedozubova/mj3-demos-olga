@@ -11,7 +11,14 @@ new sm.CharacterMap('wasysym-mathchar0mo', ParseMethods_js_1.default.mathchar0mo
 
 new sm.CommandMap('wasysym-macros', {
   Vmathcal: ['Macro', '{\\cal #1}', 1],
-  Varangle: ['Macro', '{\\unicode{x003C}\\!\\!\\!\\small\\unicode{x0029}}']
+  Varangle: ['Macro', '{\\unicode{x003C}\\!\\!\\!\\small\\unicode{x0029}}'],
+//  overline: ['UnderOver', '203E', 1],
+  longdiv: ['Macro', '{\\overline{\\smash{)}#1}}', 1],
+  oint: ['Macro', '{\\mathop{\\vcenter{\\mathchoice{\\huge\\unicode{x222E}\\,}{\\unicode{x222E}}{\\unicode{x222E}}{\\unicode{x222E}}}\\,}\\nolimits}'],
+  oiint: ['Macro', '{\\mathop{\\vcenter{\\mathchoice{\\huge\\unicode{x222F}\\,}{\\unicode{x222F}}{\\unicode{x222F}}{\\unicode{x222F}}}\\,}\\nolimits}'],
+  oiiint: ['Macro', '{\\mathop{\\vcenter{\\mathchoice{\\huge\\unicode{x2230}\\,}{\\unicode{x2230}}{\\unicode{x2230}}{\\unicode{x2230}}}\\,}\\nolimits}'],
+  ointclockwise: ['Macro', '{\\mathop{\\vcenter{\\mathchoice{\\huge\\unicode{x2232}\\,}{\\unicode{x2232}}{\\unicode{x2232}}{\\unicode{x2232}}}\\,}\\nolimits}'],
+  ointctrclockwise: ['Macro', '{\\mathop{\\vcenter{\\mathchoice{\\huge\\unicode{x2233}\\,}{\\unicode{x2233}}{\\unicode{x2233}}{\\unicode{x2233}}}\\,}\\nolimits}'],
 }, BaseMethods_js_1.default);
 
 //# sourceMappingURL=BaseMappings.js.map
